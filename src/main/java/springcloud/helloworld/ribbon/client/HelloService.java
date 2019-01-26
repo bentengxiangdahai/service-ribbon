@@ -9,8 +9,8 @@ public class HelloService {
 	
 	@Autowired
 	RestTemplate restTemplate;
-
-	public String getHelloContent() {
+	
+	public String getHelloContent() {//2019012601
 		return restTemplate.getForObject("http://SERVICE-HELLOWORLD/", String.class);
 	}
 }
